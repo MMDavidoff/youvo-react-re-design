@@ -1,0 +1,45 @@
+
+.eventItemList img {
+  height: 117px;
+  width: 100px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.eventItemList h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.eventItemList p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+}
+
+.eventItemList h4 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+}
+
+.eventItemList {
+  background-color: rgb(129, 129, 129);
+  margin-bottom: 15px;
+  border-radius: 31px;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  margin: 20px 30px;
+  color: white;
+}
+
+.divideItem {
+  padding-left: 10px;
+}

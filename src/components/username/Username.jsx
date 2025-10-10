@@ -9,14 +9,6 @@ const Username = () => {
         <img className={classes.userLogo} src="/image/userLogo.png" alt="" />
         <Link className={classes.userCard}>Username</Link>
         </div>
-        <div>
-          <div className={classes.clubSection}></div>
-        </div>
-      </div>
-
-      <div className={classes.joinedClubs}>
-        <Link className={classes.joinedClubsList}>Joined Clubs</Link>
-        <div className={classes.clubSection}></div>
       </div>
     </div>
   );

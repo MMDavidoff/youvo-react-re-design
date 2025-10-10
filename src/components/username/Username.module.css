@@ -24,40 +24,6 @@
    box-sizing: border-box;
 }
 
-.joinedClubsList {
-  background-color: rgba(255, 255, 255, 0.15) ;
-  border-radius: 30px;
-  width: 300px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  display: flex;
-  padding: 37px;
-  height: 54px;
-   margin:  30px 30px;
-   box-sizing: border-box;
-
-}
-
-.clubSection {
-   background-color: rgba(255, 255, 255, 0.15) ;
-  border-radius: 30px;
-  width: 300px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px;
-  height: 80vh;
-   margin:  30px 30px;
-   box-sizing: border-box;
-}
-
 .mainUserCard {
   justify-content: center;
   box-sizing: border-box;

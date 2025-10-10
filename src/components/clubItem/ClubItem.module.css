@@ -1,0 +1,31 @@
+.clubForm {
+  background-color: rgb(129, 129, 129);
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.clubForm img {
+  height: 117px;
+  width: 100px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.clubFormTitle h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.clubFormTitle p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+}
+
+.clubFormTitle {
+  padding: 15px 15px 0 15px;
+}

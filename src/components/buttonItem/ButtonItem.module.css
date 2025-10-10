@@ -1,0 +1,27 @@
+.mainButton  {
+  background-color: rgba(106, 255, 130, 0.30);
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+}
+
+.mainButton h2 {
+font-size: 25px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.mainButton img {
+   height: 30px;
+  width: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+ 
+}
+

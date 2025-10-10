@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap'); 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,7 +27,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  background-image: url(/public/image/yuvoMountains.jpg)
+  /* background-image: url(/public/image/yuvoMountains.jpg); */
+	font-family: "Commissioner" , sans-serif;
+
+	background-color: rgb(43, 43, 43);
+
 }
 ol, ul {
 	list-style: none;
@@ -43,3 +48,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
