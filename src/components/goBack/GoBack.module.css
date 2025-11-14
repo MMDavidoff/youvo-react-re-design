@@ -1,0 +1,16 @@
+.goBackBtn {
+  padding: 13px 55px;
+  font-size: 32px;
+  border-radius: 20px;
+  background-color: #333333;
+  cursor: pointer;
+  border: none;
+  color : white;
+  margin: 40px 0;
+  transition: 0.3s;
+}
+
+.goBackBtn:hover {
+  background-color: white;
+  color: #333333;
+}

@@ -1,0 +1,15 @@
+.accLogin {
+  background-color: #292929;
+  border-radius: 20px;
+  width: 421px;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.accLogin p {
+  color: white;
+  font-size: 20px;
+}

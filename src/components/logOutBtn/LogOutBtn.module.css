@@ -1,0 +1,17 @@
+.logOutBtn {
+  background-color: #331414;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 150px;
+  font-size: 32px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.logOutBtn:hover {
+  background-color: white;
+  color: #331414  ;
+}
