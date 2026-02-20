@@ -1,0 +1,43 @@
+.personChat {
+  background-color: #404040;
+  border: #5d5d5d 1px solid;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 210px;
+  gap: 15px;
+  transition: 500ms;
+}
+
+.personChat:hover {
+  background-color: #f1f1f1;
+  scale: 1.1;
+}
+.dateChat {
+  font-weight: bold;
+  text-shadow: rgb(54, 54, 54) 1px 1px 1px;
+}
+
+.opponentName {
+  font-weight: bold;
+  text-shadow: rgb(54, 54, 54) 1px 1px 1px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.timeAndImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.personChatInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}

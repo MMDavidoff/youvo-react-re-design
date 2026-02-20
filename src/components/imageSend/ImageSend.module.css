@@ -1,0 +1,21 @@
+.imageSend {
+ background-color: #93b3dd;
+  border: #5D5D5D  1px solid;
+  border-radius: 20px;
+  max-width: 80px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  height: 66px;
+  width: 100%;
+  margin-left: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.imageSend:hover {
+  background-color: #f1f1f1;
+  scale: 1.1;
+}

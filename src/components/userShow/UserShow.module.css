@@ -1,0 +1,28 @@
+.userShow {
+   background-color: #282828;
+  border: #5D5D5D  1px solid;
+  border-radius: 20px;
+  width: 262px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  margin-top: 20px;
+}
+
+.userShow p {
+  color: white;
+  font-size: 24px;
+  text-align: end;
+ padding: 10px;
+}
+
+@media (max-width: 450px) {
+  .userShow  {
+    width: 100%;
+  }
+
+  .userShow p {
+    text-align: center;
+  }
+
+ 
+}

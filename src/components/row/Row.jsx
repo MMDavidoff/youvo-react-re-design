@@ -5,7 +5,7 @@ const Row = ({children}) => {
     <div
       style={{
         display: "flex",
-        justifyContent: "space-between",
+        // justifyContent: "space-between",
       }}
     >
       {children}

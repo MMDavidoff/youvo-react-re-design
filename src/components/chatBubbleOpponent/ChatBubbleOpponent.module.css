@@ -1,0 +1,25 @@
+.chatBubbleOpponentFlex {
+  display: flex;
+  align-items: center;
+}
+.ChatBubbleOpponent {
+  background-color: #696969;
+  border: #5d5d5d 1px solid;
+  border-radius: 20px;
+ 
+  box-sizing: border-box;
+  padding: 10px;
+  width: fit-content;
+  margin-left: 20px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: end;
+}
+
+.userLogoOpponent {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #c25555;
+  margin-left: 8px;
+}

@@ -1,0 +1,11 @@
+.footerChat {
+  display: flex;
+  margin-top: auto;
+  
+}
+
+@media (max-width: 450px) {
+  .footerChat {
+    display: none;
+  }
+}

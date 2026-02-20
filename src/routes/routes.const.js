@@ -3,4 +3,5 @@ export const ROUTES = {
   REGISTER: "/reg",
   INFO: "/info",
   LOGIN: "/login",
+  CHAT: "/chat",
 }

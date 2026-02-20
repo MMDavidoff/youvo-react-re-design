@@ -1,0 +1,19 @@
+.chatSection {
+  padding: 25px;
+}
+
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .chatArea {
+    display: none;
+  }
+
+  .sideBarArea {
+    width: 100%;
+  }
+}
