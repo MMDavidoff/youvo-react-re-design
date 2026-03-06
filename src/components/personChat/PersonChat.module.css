@@ -9,6 +9,7 @@
   min-width: 210px;
   gap: 15px;
   transition: 500ms;
+  cursor: pointer;
 }
 
 .personChat:hover {
