@@ -4,6 +4,7 @@ import RegisterMenu from '../components/registerMenu/RegisterMenu';
 import Row from '../components/row/Row';
 import RegTopBar from '../components/regTopBar/RegTopBar';
 
+
 const LoginPage = () => {
   return (
     <div>

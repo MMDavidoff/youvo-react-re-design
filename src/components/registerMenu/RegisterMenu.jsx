@@ -7,11 +7,11 @@ const RegisterMenu = ({signTitle}) => {
   return (
     <div className={classes.signMenu}>
       <form className={classes.form}>
-        <h2 className={classes.header}>{signTitle}</h2>
-        <input type="text" placeholder={"Enter your name"} />
-        <input type="email"placeholder={"Enter Email"} />
+        <h2 className={classes.header}>Log In</h2>
+        <input type="text" placeholder={"Enter Username"} />
         <input type="password"placeholder={"Enter Password"} />
-      <ButtonMain />
+      
+      <button className={classes.signUpButton}>Log In</button>
       </form>
     </div>
   );

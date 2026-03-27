@@ -31,6 +31,11 @@ const router = createBrowserRouter([
     path: ROUTES.CHAT,
     element: <ChatPage />,
   },
+
+   {
+    path: ROUTES.SETTINGS,
+    element: <SettingsPage />,
+  },
 ]);
 
 export default router;
