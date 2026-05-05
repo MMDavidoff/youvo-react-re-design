@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import classes from './RegTopBar.module.css';
-import LogoYouvo from '../logoYouvo/logoYouvo';
-import AccLogin from '../accLogin/AccLogin';
+import React from "react";
+import classes from "./RegTopBar.module.css";
+import LogoYouvo from "../logoYouvo/logoYouvo";
+import AccLogin from "../accLogin/AccLogin";
+import ButtonAction from "../buttonAction/ButtonAction";
+import TopBarAction from "../topBarAction/TopBarAction";
 
-const RegTopBar = () => {
- 
+const RegTopBar = ({ isAuth }) => {
   return (
     <div className={classes.regTopBar}>
-      <LogoYouvo /> 
-      <AccLogin isRegister={true}  regBtnTitle={CSSViewTransitionRule}/>
+      <LogoYouvo />
+      {isAuth ? <AccLogin /> : <TopBarAction />} 
     </div>
-    
   );
-}
+};
 
 export default RegTopBar;

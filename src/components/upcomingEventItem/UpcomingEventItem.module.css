@@ -1,0 +1,43 @@
+.upcomingEventItem {
+border: 1px solid #364153;
+  background-color: #252525;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.upcomingEventItem:hover {
+  border-color: #1aa3a3;
+  
+}
+
+.title {
+  color: #dfdfdf;
+  font-size: 24px;
+}
+
+.description {
+  color: #ffffffa7;
+  font-size: 16px;
+  margin: 10px 0;
+}  
+
+.dateWrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.date {
+  color: #1aa3a3;
+  font-size: 16px;
+  text-align: end;
+}  
+
+.time {
+  color: #ffffffa7;
+  font-size: 16px;
+}  
+

@@ -1,0 +1,32 @@
+.mainPageButton {
+  background-color: #009689;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(26, 163, 163, 0.6);
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  max-width: 170px;
+  width: 100%;
+}
+
+.mainPageButton:hover {
+  background-color: rgba(0, 141, 129, 0.8);
+}
+
+
+.redButton {
+box-shadow: 0 0 10px rgba(230, 5, 5, 0.6);
+background-color: #a61212;
+
+}
+
+.redButton:hover {
+  background-color: rgba(161, 18, 18, 0.8);
+}

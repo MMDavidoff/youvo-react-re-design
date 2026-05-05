@@ -1,0 +1,43 @@
+.blockItem {
+  border: 1px solid #364153;
+  background-color: #252525;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blockItem:hover {
+  border-color: #1aa3a3;
+}
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockItem h3 {
+  color: #dfdfdf;
+  font-size: 24px;
+}
+
+.blockItem p {
+  color: #ffffffa7;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.blockItem h4 {
+  color: #1aa3a3;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: end;
+}
+
+.usersWrapper {
+  display: flex;
+  gap: 7px;
+  margin-top: 15px;
+  align-items: center;
+}
+

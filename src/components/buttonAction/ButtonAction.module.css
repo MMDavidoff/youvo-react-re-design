@@ -1,0 +1,18 @@
+.buttonAction {
+  color: #99a1af;
+  font-size: 20px;
+  margin-right: 20px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  border: #364153  1px solid;
+  cursor: pointer;
+  transition: 500ms;
+  padding: 10px;
+  max-width: 90px;
+  width: 100%;
+
+}
+
+.buttonAction:hover {
+ border-color: #1aa3a3;
+}

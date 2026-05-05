@@ -3,10 +3,10 @@ import classes from './LoginBtn.module.css';
 
 
 
-const LoginBtn = ({authBtnTitle = "Sign In" , regBtnTitle = "Sign Up"}) => {
+const LoginBtn = () => {
   return (
     <button className={classes.loginBtn}>
-      {authBtnTitle}
+      Sign In
     </button>
   );
 }

@@ -1,12 +1,13 @@
 .regTopBar {
- background: linear-gradient(135deg, #343434, #131313);
-  width: 95%;
-  border-radius: 20px;
+ background-color: #1a1a1a;
+  width: 98.3%;
+  border-radius: 0px;
   height: 126px;
   display: flex;
   align-items: center;
   padding: 0 20px 0 20px;
   color: white;
   justify-content: space-between;
-  margin-top: 20px;
+  border: 1px solid #364153;
+  
 }

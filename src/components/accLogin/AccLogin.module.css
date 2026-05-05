@@ -1,5 +1,5 @@
 .accLogin {
-  background-color: #292929;
+  
   border-radius: 20px;
   width: 421px;
   display: flex;
@@ -10,6 +10,7 @@
 }
 
 .accLogin p {
-  color: white;
+  color: #99a1af;
   font-size: 20px;
+  margin-right: 20px
 }

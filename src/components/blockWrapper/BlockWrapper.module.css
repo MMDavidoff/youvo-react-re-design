@@ -1,0 +1,15 @@
+.blockWrapper {
+  border: 1px solid #364153;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 590px;
+}
+
+.blockWrapper h2 {
+  font-size: 32px;
+  margin: 20px 10px;
+  color: #fff;
+}
+
