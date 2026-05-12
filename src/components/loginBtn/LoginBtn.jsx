@@ -1,12 +1,22 @@
 import React from 'react';
 import classes from './LoginBtn.module.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
-const LoginBtn = () => {
+const LoginBtn = ({ isRegister }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (isRegister) {
+      navigate('/login');
+    } else {
+      navigate('/register');
+    }
+  }
+  
   return (
-    <button className={classes.loginBtn}>
-      Sign Up
+    <button onClick={handleClick} className={classes.loginBtn}>
+     {isRegister ? "Log In" : "Sign Up"}
     </button>
   );
 }

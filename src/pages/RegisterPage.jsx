@@ -7,7 +7,7 @@ import RegTopBar from '../components/regTopBar/RegTopBar';
 const RegisterPage = () => {
   return (
     <main>
-          <RegTopBar isRegister={false} />
+          <RegTopBar isRegister={true} />
         <Row>
         <AuthMenu isLogin={false} />
         </Row>
