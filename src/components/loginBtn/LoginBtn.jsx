@@ -6,7 +6,7 @@ import classes from './LoginBtn.module.css';
 const LoginBtn = () => {
   return (
     <button className={classes.loginBtn}>
-      Sign In
+      Sign Up
     </button>
   );
 }
