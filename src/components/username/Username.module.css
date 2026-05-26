@@ -1,9 +1,10 @@
 .topSection {
   display: flex;
+  position: relative;
 }
 .userCard {
-  background-color: rgba(255, 255, 255, 0.15) ;
- 
+  background-color: rgba(255, 255, 255, 0.15);
+
   width: 175px;
   border-radius: 30px;
   text-align: center;
@@ -15,13 +16,12 @@
   display: flex;
   padding: 10px;
   height: 54px;
-  margin: 30px 0px 0px 0px ;
-  
+  margin: 30px 0px 0px 0px;
 }
 
 .userLogo {
-   margin: 30px 30px 0px 30px;
-   box-sizing: border-box;
+  margin: 30px 30px 0px 30px;
+  box-sizing: border-box;
 }
 
 .mainUserCard {
@@ -31,4 +31,52 @@
 
 .userCardFlex {
   display: flex;
+  cursor: pointer;
+}
+
+.exitModal {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(129, 129, 129);
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 10;
+  position: absolute;
+  margin: 40px 0px 0px 40px;
+
+  opacity: 0;
+  transform: translateY(-20px) scale(0.95);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.993);
+  width: 240px;
+
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+
+.buttonSettings {
+  background-color: rgba(207, 207, 207, 0.45) !important;
+  transition: all 0.3s ease;
+}
+
+.buttonSettings:hover {
+  background-color: rgba(238, 238, 238, 0.45) !important;
+  
+}
+
+.buttonExit {
+  background-color: rgba(255, 76, 76, 0.801) !important;
+  transition: all 0.3s ease;
+  margin: 0 !important;
+}
+
+.buttonExit:hover {
+  background-color: rgb(255, 78, 78) !important;
+  
 }

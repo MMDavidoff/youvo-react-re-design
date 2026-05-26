@@ -1,18 +1,18 @@
 import React from 'react';
 import Container from '../components/container/Container';
-import RegisterMenu from '../components/registerMenu/RegisterMenu';
+import AuthMenu from '../components/AuthMenu/AuthMenu';
 import Row from '../components/row/Row';
 import RegTopBar from '../components/regTopBar/RegTopBar';
+
 
 const LoginPage = () => {
   return (
     <div>
-       <Container>
-          <RegTopBar isRegister={false} />
+      
+          <RegTopBar isAuth={true} />
         <Row>
-        <RegisterMenu signTitle="Sign In"/>
+        <AuthMenu isLogin={true} />
         </Row>
-      </Container>
     </div>
   );
 }

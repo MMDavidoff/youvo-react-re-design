@@ -5,6 +5,8 @@ import RegisterPage from "../pages/RegisterPage";
 import AccInfoPage from "../pages/AccInfoPage";
 import LoginPage from "../pages/LoginPage";
 import ChatPage from "../pages/ChatPage";
+import SettingsPage from "../pages/SettingsPage";
+import MainPage from "../pages/MainPage";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,17 @@ const router = createBrowserRouter([
     path: ROUTES.CHAT,
     element: <ChatPage />,
   },
+
+   {
+    path: ROUTES.SETTINGS,
+    element: <SettingsPage />,
+  },
+
+   {
+    path: ROUTES.MAIN,
+    element: <MainPage />,
+  },
+
 ]);
 
 export default router;

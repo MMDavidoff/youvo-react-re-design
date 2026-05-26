@@ -2,11 +2,11 @@ import React from 'react';
 import classes from './AccLogin.module.css';
 import LoginBtn from '../loginBtn/LoginBtn';
 
-const AccLogin = ({isRegister , onClick}) => {
+const AccLogin = ({ isRegister }) => {
   return (
     <div className={classes.accLogin}>
-      <p>{isRegister ? "Have an account?" : "Dont have an account?"}</p>
-     <LoginBtn authBtnTitle={ isRegister ? "Sign In" : "Sign Up" } onClick={onClick} />
+      <p>{isRegister ? "Already have an account?" : "Don't have an account?"}</p>
+     <LoginBtn isRegister={isRegister} />
     </div>
   );
 }

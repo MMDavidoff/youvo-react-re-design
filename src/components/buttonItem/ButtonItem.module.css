@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 35px;
+  cursor: pointer;
 }
 
 .mainButton h2 {
@@ -24,4 +25,6 @@ font-size: 25px;
   border-bottom-left-radius: 20px;
  
 }
+
+
 
