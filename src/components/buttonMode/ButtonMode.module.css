@@ -1,0 +1,18 @@
+.buttonMode {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #141414;
+    width: 56px;
+    height: 56px;
+    border-radius: 15px;
+     box-sizing: border-box;
+     transition: 0.6s ease;
+}
+
+.buttonMode:hover {
+  background-color: #3b8c85;
+  cursor: pointer;
+  
+}

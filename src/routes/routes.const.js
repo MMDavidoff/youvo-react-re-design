@@ -6,4 +6,5 @@ export const ROUTES = {
   CHAT: "chat",
   SETTINGS: "settings",
   MAIN: "main",
+  NEWCHAT: "newchat",
 }

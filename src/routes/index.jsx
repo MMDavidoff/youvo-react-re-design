@@ -7,6 +7,7 @@ import LoginPage from "../pages/LoginPage";
 import ChatPage from "../pages/ChatPage";
 import SettingsPage from "../pages/SettingsPage";
 import MainPage from "../pages/MainPage";
+import NewChatPage from "../pages/NewChatPage";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
    {
     path: ROUTES.MAIN,
     element: <MainPage />,
+  },
+   {
+    path: ROUTES.NEWCHAT,
+    element: <NewChatPage />,
   },
 
 ]);
