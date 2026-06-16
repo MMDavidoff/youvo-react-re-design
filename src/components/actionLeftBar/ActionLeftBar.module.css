@@ -1,12 +1,13 @@
 .actionLeftBar {
   background-color: #0a0a0a;
-   height: 90vh;
+   height: 87vh;
    padding: 20px;
    width: 40px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
    align-items: center;
+   justify-content: space-between;
+
 }
 
 .buttonModeContainer {
