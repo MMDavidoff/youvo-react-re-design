@@ -1,15 +1,26 @@
 import React from "react";
 import classes from "./ChatItem.module.css";
 
-const ChatItem = () => {
+const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting }) => {
   return (
     <div className={classes.chatItem}>
       <div className={classes.userPicture}>
         <img src="image/user.svg" alt="userPicture" height="24" width="24" />
       </div>
       <div className={classes.itemInfo}>
-        <p className={classes.itemTitle}>Football club</p>
-        <p className={classes.itemMessage}>Lorem ipsum dolor sit amet...</p>
+        <div className={classes.itemMessageContainer}>
+          <p className={classes.itemTitle}>{itemTitle}</p>
+          <p className={classes.itemTime}>{messageTime}</p>
+        </div>
+        <div className={classes.itemChatCounter}>
+          <p className={classes.itemMessage}>{itemMessage}</p>
+          {!isSetting && <div className={classes.unreadCount}>{unreadCount}</div>}
+        </div>
+        {isSetting && (
+          <div className={classes.settingIcon}>
+            <img src="image/settings.svg" alt="setting" height="25" width="25" />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,14 +1,19 @@
 .chatItem {
     border-radius: 15px;
-    background-color: #141414;
-    padding: 15px;
+    padding: 15px 5px;
     box-sizing: border-box;
     width: 100%;
     max-width: 370px;
     display: flex;
     gap: 15px;
+    transition: background-color 0.3s ease;
 
     
+}
+
+.chatItem:hover, .chatItem:focus {
+    background-color: #1e1e1e;
+    cursor: pointer;
 }
 
 .userPicture {
@@ -19,13 +24,17 @@
     align-items: center;    
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
+
 
 .itemInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    width: 100%;
+    max-width: 300px;
 }
 
 
@@ -35,9 +44,46 @@
     margin-bottom: 5px;
     color: #ffffff;
 }
+.itemTime {
+  font-size: 15px;
+  color: #677082;
+  
+}
 
+.itemMessageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
 
 .itemMessage {
     font-size: 14px;
     color: #677082;
+    white-space: nowrap;    
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+.unreadCount {
+    background-color: #008b7f;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.itemChatCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
