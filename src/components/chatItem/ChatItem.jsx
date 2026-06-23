@@ -16,12 +16,13 @@ const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting 
           <p className={classes.itemMessage}>{itemMessage}</p>
           {!isSetting && <div className={classes.unreadCount}>{unreadCount}</div>}
         </div>
-        {isSetting && (
+       
+      </div>
+       {isSetting && (
           <div className={classes.settingIcon}>
             <img src="image/settings.svg" alt="setting" height="25" width="25" />
           </div>
         )}
-      </div>
     </div>
   );
 };

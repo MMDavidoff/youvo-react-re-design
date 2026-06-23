@@ -1,53 +1,49 @@
 .chatItem {
-    border-radius: 15px;
-    padding: 15px 5px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 370px;
-    display: flex;
-    gap: 15px;
-    transition: background-color 0.3s ease;
-
-    
+  border-radius: 15px;
+  padding: 15px 5px;
+  box-sizing: border-box;
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  transition: background-color 0.3s ease;
 }
 
-.chatItem:hover, .chatItem:focus {
-    background-color: #1e1e1e;
-    cursor: pointer;
+.chatItem:hover,
+.chatItem:focus {
+  background-color: #1e1e1e;
+  cursor: pointer;
 }
 
 .userPicture {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #008b7f;
-    align-items: center;    
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #008b7f;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
-
 
 .itemInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
-    max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  max-width: 300px;
 }
 
-
 .itemTitle {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #ffffff;
 }
 .itemTime {
   font-size: 15px;
   color: #677082;
-  
 }
 
 .itemMessageContainer {
@@ -58,32 +54,34 @@
 }
 
 .itemMessage {
-    font-size: 14px;
-    color: #677082;
-    white-space: nowrap;    
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 14px;
+  color: #677082;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .unreadCount {
-    background-color: #008b7f;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
+  background-color: #008b7f;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
 }
 
 .itemChatCounter {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
 }
 
-
+.settingIcon {
+  box-sizing: border-box;
+}

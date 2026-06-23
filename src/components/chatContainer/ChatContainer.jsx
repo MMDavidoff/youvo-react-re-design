@@ -27,8 +27,8 @@ const ChatContainer = () => {
       />
       <div className={classes.profileSettings}>
         <ChatItem
-          itemTitle="Project discussion"
-          itemMessage="Let's discuss the project timeline."
+          itemTitle="myron"
+          itemMessage="online"
           isSetting={true}
         />
       </div>
