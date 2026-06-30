@@ -5,6 +5,7 @@ import ActionLeftBar from "../components/actionLeftBar/ActionLeftBar";
 import ChatContainer from "../components/chatContainer/ChatContainer";
 import classes from "./NewChatPage.module.css";
 import ChatItem from "../components/chatItem/ChatItem";
+import ChatWindowHeader from "../components/chatWindowHeader/ChatWindowHeader";
 
 const NewChatPage = () => {
   return (
@@ -13,6 +14,7 @@ const NewChatPage = () => {
       <div className={classes.flexContainer}>
         <ActionLeftBar />
         <ChatContainer />
+        <ChatWindowHeader />
       </div>
     </div>
   );
