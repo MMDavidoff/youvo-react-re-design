@@ -1,10 +1,10 @@
 .buttonAction {
-  color: #99a1af;
+  color: var(--text-secondary);
   font-size: 20px;
   margin-right: 20px;
-  background-color: #1a1a1a;
+  background-color: var(--bg-surface-2);
   border-radius: 20px;
-  border: #364153  1px solid;
+  border: var(--border-color) 1px solid;
   cursor: pointer;
   transition: 500ms;
   padding: 10px;

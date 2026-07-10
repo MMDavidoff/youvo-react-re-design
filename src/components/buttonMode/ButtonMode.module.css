@@ -3,7 +3,7 @@
   align-items: center;
     justify-content: center;
     border: none;
-    background-color: #141414;
+    background-color: var(--bg-surface-1);
     width: 56px;
     height: 56px;
     border-radius: 15px;
@@ -14,5 +14,9 @@
 .buttonMode:hover {
   background-color: #3b8c85;
   cursor: pointer;
-  
+
+}
+
+.active {
+  background-color: #3b8c85;
 }

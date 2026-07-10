@@ -1,5 +1,5 @@
 .clubForm {
-  background-color: rgb(129, 129, 129);
+  background-color: var(--bg-avatar);
   margin-bottom: 15px;
   border-radius: 20px;
   box-sizing: border-box;

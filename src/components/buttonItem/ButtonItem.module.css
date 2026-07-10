@@ -15,7 +15,7 @@ font-size: 25px;
   font-weight: 200;
   line-height: 18px;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: var(--text-primary);
 }
 
 .mainButton img {

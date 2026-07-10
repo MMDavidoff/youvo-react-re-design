@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  background-color: #0a0a0a;
+  background-color: var(--bg-app);
   align-items: center;
   gap: 15px;
-  
+
   height: 90vh;
   width: 100%;
   max-width: 400px;
 
   box-sizing: border-box;
-  border-left: 0.1px solid #36415368;
-  border-right: 0.1px solid #36415367;
+  border-left: 0.1px solid var(--border-color-soft);
+  border-right: 0.1px solid var(--border-color-soft);
   
 }
 

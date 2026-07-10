@@ -1,4 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+:root {
+  --bg-page: #0f0f0f;
+  --bg-app: #0a0a0a;
+  --bg-app-strong: #000000;
+  --bg-surface-1: #141414;
+  --bg-surface-2: #1a1a1a;
+  --bg-surface-2b: #1e1e1e;
+  --bg-surface-3: #202020;
+  --bg-surface-4: #252525;
+  --bg-surface-5: #282828;
+  --bg-surface-6: #333333;
+  --bg-surface-7: #3b3b3b;
+  --bg-surface-8: #4d4d4d;
+  --bg-surface-mid: #404040;
+  --bg-input: #101010;
+  --bg-avatar: rgb(129, 129, 129);
+  --bg-danger-surface: #331414;
+  --bg-elevated-hover: rgb(28, 28, 37);
+  --bg-overlay: rgba(255, 255, 255, 0.15);
+  --bg-overlay-soft: rgba(255, 255, 255, 0.1);
+
+  --text-primary: #ffffff;
+  --text-secondary: #99a1af;
+  --text-tertiary: #ffffffa7;
+  --text-muted: #888888;
+
+  --border-color: #364153;
+  --border-color-mid: #5d5d5d;
+  --border-color-soft: rgba(54, 65, 83, 0.4);
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg-page: #f2f2f4;
+  --bg-app: #ffffff;
+  --bg-app-strong: #ffffff;
+  --bg-surface-1: #eef0f2;
+  --bg-surface-2: #ffffff;
+  --bg-surface-2b: #f7f7f8;
+  --bg-surface-3: #ececee;
+  --bg-surface-4: #f3f3f5;
+  --bg-surface-5: #eef0f2;
+  --bg-surface-6: #e4e4e7;
+  --bg-surface-7: #d8d8dc;
+  --bg-surface-8: #c8c8cd;
+  --bg-surface-mid: #dcdce0;
+  --bg-input: #ffffff;
+  --bg-avatar: rgb(196, 196, 201);
+  --bg-danger-surface: #fbe3e3;
+  --bg-elevated-hover: rgb(232, 232, 238);
+  --bg-overlay: rgba(0, 0, 0, 0.06);
+  --bg-overlay-soft: rgba(0, 0, 0, 0.05);
+
+  --text-primary: #14181f;
+  --text-secondary: #55606f;
+  --text-tertiary: #14181fa7;
+  --text-muted: #767676;
+
+  --border-color: #d7dbe3;
+  --border-color-mid: #d6d6d8;
+  --border-color-soft: rgba(54, 65, 83, 0.15);
+
+  color-scheme: light;
+}
+
+img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']) {
+  transition: filter 0.3s ease;
+}
+
+[data-theme='light'] img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']) {
+  filter: invert(0.85);
+}
+
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -30,7 +108,8 @@ body {
   /* background-image: url(/public/image/yuvoMountains.jpg); */
 	font-family: "Commissioner" , sans-serif;
 
-	background-color: #0f0f0f;
+	background-color: var(--bg-page);
+	color: var(--text-primary);
 
 }
 ol, ul {

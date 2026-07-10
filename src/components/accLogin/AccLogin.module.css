@@ -10,7 +10,7 @@
 }
 
 .accLogin p {
-  color: #99a1af;
+  color: var(--text-secondary);
   font-size: 18px;
   margin-right: 20px
  

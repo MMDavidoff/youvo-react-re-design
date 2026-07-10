@@ -5,7 +5,7 @@
 }
 .chatBubble {
   background-color: #93b3dd;
-  border: #5d5d5d 1px solid;
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
  
   box-sizing: border-box;

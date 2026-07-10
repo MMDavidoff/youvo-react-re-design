@@ -6,6 +6,7 @@ import ChatContainer from "../components/chatContainer/ChatContainer";
 import classes from "./NewChatPage.module.css";
 import ChatItem from "../components/chatItem/ChatItem";
 import ChatWindowHeader from "../components/chatWindowHeader/ChatWindowHeader";
+import BubbleRight from "../components/bubbleRight/BubbleRight";
 
 const NewChatPage = () => {
   return (
@@ -15,6 +16,7 @@ const NewChatPage = () => {
         <ActionLeftBar />
         <ChatContainer />
         <ChatWindowHeader />
+        <BubbleRight />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .personChat {
-  background-color: #404040;
-  border: #5d5d5d 1px solid;
+  background-color: var(--bg-surface-mid);
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
   display: flex;
   padding: 10px 15px;

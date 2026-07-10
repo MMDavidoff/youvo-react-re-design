@@ -1,7 +1,7 @@
 .spaceChatLine {
-  background-color: #202020;
+  background-color: var(--bg-surface-3);
   border-radius: 20px;
-  border: #5d5d5d solid 1px;
+  border: var(--border-color-mid) solid 1px;
   width: 100%;
   box-sizing: border-box;
   padding: 5px;

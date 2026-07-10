@@ -1,6 +1,6 @@
  .sendButton {
  background-color: #93b3dd;
-  border: #5D5D5D  1px solid;
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
   max-width: 80px;
   box-sizing: border-box;

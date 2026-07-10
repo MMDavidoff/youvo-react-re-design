@@ -1,13 +1,13 @@
 .regTopBar {
- background-color: #1a1a1a;
+ background-color: var(--bg-surface-2);
   width: 98.3%;
   border-radius: 0px;
   height: 126px;
   display: flex;
   align-items: center;
   padding: 0 20px 0 20px;
-  color: white;
+  color: var(--text-primary);
   justify-content: space-between;
-  border: 1px solid #364153;
-  
+  border: 1px solid var(--border-color);
+
 }

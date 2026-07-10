@@ -1,6 +1,6 @@
 .upcomingEventItem {
-border: 1px solid #364153;
-  background-color: #252525;
+border: 1px solid var(--border-color);
+  background-color: var(--bg-surface-4);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -13,15 +13,15 @@ border: 1px solid #364153;
 }
 
 .title {
-  color: #dfdfdf;
+  color: var(--text-secondary);
   font-size: 24px;
 }
 
 .description {
-  color: #ffffffa7;
+  color: var(--text-tertiary);
   font-size: 16px;
   margin: 10px 0;
-}  
+}
 
 .dateWrapper {
   display: flex;
@@ -37,7 +37,7 @@ border: 1px solid #364153;
 }  
 
 .time {
-  color: #ffffffa7;
+  color: var(--text-tertiary);
   font-size: 16px;
-}  
+}
 

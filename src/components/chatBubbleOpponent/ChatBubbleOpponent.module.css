@@ -4,7 +4,7 @@
 }
 .ChatBubbleOpponent {
   background-color: #696969;
-  border: #5d5d5d 1px solid;
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
  
   box-sizing: border-box;

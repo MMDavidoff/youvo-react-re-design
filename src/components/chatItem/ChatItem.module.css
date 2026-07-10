@@ -11,7 +11,7 @@
 
 .chatItem:hover,
 .chatItem:focus {
-  background-color: #1e1e1e;
+  background-color: var(--bg-surface-2b);
   cursor: pointer;
 }
 
@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+    flex: 0 0 50px;
 }
 
 .itemInfo {
@@ -33,17 +34,19 @@
   gap: 5px;
   width: 100%;
   max-width: 300px;
+   flex: 1;
+  min-width: 0;
 }
 
 .itemTitle {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 .itemTime {
   font-size: 15px;
-  color: #677082;
+  color: var(--text-secondary);
 }
 
 .itemMessageContainer {
@@ -55,7 +58,7 @@
 
 .itemMessage {
   font-size: 14px;
-  color: #677082;
+  color: var(--text-secondary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

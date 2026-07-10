@@ -3,7 +3,7 @@
   position: relative;
 }
 .userCard {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--bg-overlay);
 
   width: 175px;
   border-radius: 30px;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 20px;
   display: flex;
   padding: 10px;
@@ -37,7 +37,7 @@
 .exitModal {
   display: flex;
   flex-direction: column;
-  background-color: rgb(129, 129, 129);
+  background-color: var(--bg-avatar);
   padding: 20px;
   border-radius: 20px;
   z-index: 10;

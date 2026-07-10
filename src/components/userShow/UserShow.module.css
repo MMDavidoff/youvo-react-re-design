@@ -1,6 +1,6 @@
 .userShow {
-   background-color: #282828;
-  border: #5D5D5D  1px solid;
+   background-color: var(--bg-surface-5);
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
   width: 262px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 .userShow p {
-  color: white;
+  color: var(--text-primary);
   font-size: 24px;
   text-align: end;
  padding: 10px;

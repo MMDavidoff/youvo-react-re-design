@@ -1,6 +1,6 @@
 .headerChat {
-  background-color: #282828;
-  border: #5d5d5d 1px solid;
+  background-color: var(--bg-surface-5);
+  border: var(--border-color-mid) 1px solid;
   border-radius: 20px;
   box-sizing: border-box;
   padding: 10px 5px;
@@ -13,7 +13,7 @@
 }
 
 .chatName {
-  color: white;
+  color: var(--text-primary);
   font-size: 25px;
   text-align: center;
 }

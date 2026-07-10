@@ -28,7 +28,7 @@
 }
 
 .eventItemList {
-  background-color: rgb(129, 129, 129);
+  background-color: var(--bg-avatar);
   margin-bottom: 15px;
   border-radius: 31px;
   box-sizing: border-box;
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   margin: 20px 30px;
-  color: white;
+  color: var(--text-primary);
 }
 
 .divideItem {
