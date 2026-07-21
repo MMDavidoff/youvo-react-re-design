@@ -7,7 +7,7 @@ const ButtonMode = ({ modeIcon, modeAlt, onClick, isActive }) => {
             className={`${classes.buttonMode} ${isActive ? classes.active : ""}`}
             onClick={onClick}
         >
-            <img src={modeIcon} alt={modeAlt} width="24" height="24" />
+            <img src={modeIcon} alt={modeAlt} width="28" height="28" />
         </button>
     );
 }

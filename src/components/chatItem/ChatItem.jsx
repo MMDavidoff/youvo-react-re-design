@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./ChatItem.module.css";
 
-const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting }) => {
+const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting, isActive }) => {
   return (
-    <div className={classes.chatItem}>
+    <div className={`${classes.chatItem} ${isActive ? classes.active : ""}`}>
       <div className={classes.userPicture}>
         <img src="image/user.svg" alt="userPicture" height="24" width="24" />
       </div>
@@ -14,7 +14,7 @@ const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting 
         </div>
         <div className={classes.itemChatCounter}>
           <p className={classes.itemMessage}>{itemMessage}</p>
-          {!isSetting && <div className={classes.unreadCount}>{unreadCount}</div>}
+          {!isSetting && unreadCount && <div className={classes.unreadCount}>{unreadCount}</div>}
         </div>
        
       </div>

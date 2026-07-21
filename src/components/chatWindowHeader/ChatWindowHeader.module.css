@@ -1,5 +1,11 @@
 .chatWindowHeader {
   width: 100%;
-  max-width: 1500px;
-  background-color: var(--bg-app);
+  max-width: 420px;
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

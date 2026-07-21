@@ -6,8 +6,8 @@ const ChatWindowHeader = () => {
   return (
     <div className={classes.chatWindowHeader}>
        <ChatItem
-          itemTitle="Mark"
-          itemMessage="offline"
+          itemTitle="Photography Club"
+          itemMessage="Online"
           isSetting={true}
           />
     </div>

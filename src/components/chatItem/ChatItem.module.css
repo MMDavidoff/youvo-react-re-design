@@ -1,11 +1,11 @@
 .chatItem {
-  border-radius: 15px;
-  padding: 15px 5px;
+  border-radius: 18px;
+  padding: 18px 12px;
   box-sizing: border-box;
-  max-width: 370px;
+  max-width: 420px;
   width: 100%;
   display: flex;
-  gap: 15px;
+  gap: 18px;
   transition: background-color 0.3s ease;
 }
 
@@ -15,37 +15,41 @@
   cursor: pointer;
 }
 
+.active {
+  background-color: var(--bg-surface-1);
+}
+
 .userPicture {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #008b7f;
   align-items: center;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-    flex: 0 0 50px;
+    flex: 0 0 60px;
 }
 
 .itemInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
    flex: 1;
   min-width: 0;
 }
 
 .itemTitle {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
   color: var(--text-primary);
 }
 .itemTime {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-secondary);
 }
 
@@ -57,7 +61,7 @@
 }
 
 .itemMessage {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-secondary);
   white-space: nowrap;
   overflow: hidden;
@@ -67,14 +71,14 @@
 .unreadCount {
   background-color: #008b7f;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 13px;
   padding: 2px 6px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   box-sizing: border-box;
 }
 
@@ -87,4 +91,7 @@
 
 .settingIcon {
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,13 +1,12 @@
 .imageSend {
- background-color: #93b3dd;
-  border: var(--border-color-mid) 1px solid;
-  border-radius: 20px;
-  max-width: 80px;
+ background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+  flex: 0 0 78px;
   box-sizing: border-box;
-  padding: 10px 5px;
-  height: 66px;
-  width: 100%;
-  margin-left: 20px;
+  padding: 10px;
+  height: 78px;
+  width: 78px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -16,6 +15,6 @@
 }
 
 .imageSend:hover {
-  background-color: #f1f1f1;
+  border-color: #1aa3a3;
   scale: 1.1;
 }

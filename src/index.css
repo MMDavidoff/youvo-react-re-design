@@ -5,9 +5,9 @@
   --bg-app: #0a0a0a;
   --bg-app-strong: #000000;
   --bg-surface-1: #141414;
-  --bg-surface-2: #1a1a1a;
+  --bg-surface-2: #111111;
   --bg-surface-2b: #1e1e1e;
-  --bg-surface-3: #202020;
+  --bg-surface-3: #474747;
   --bg-surface-4: #252525;
   --bg-surface-5: #282828;
   --bg-surface-6: #333333;
@@ -34,19 +34,19 @@
 }
 
 :root[data-theme='light'] {
-  --bg-page: #f2f2f4;
-  --bg-app: #ffffff;
+  --bg-page: #eef2f8;
+  --bg-app: #f8fafc;
   --bg-app-strong: #ffffff;
-  --bg-surface-1: #eef0f2;
-  --bg-surface-2: #ffffff;
-  --bg-surface-2b: #f7f7f8;
-  --bg-surface-3: #ececee;
-  --bg-surface-4: #f3f3f5;
-  --bg-surface-5: #eef0f2;
-  --bg-surface-6: #e4e4e7;
-  --bg-surface-7: #d8d8dc;
-  --bg-surface-8: #c8c8cd;
-  --bg-surface-mid: #dcdce0;
+  --bg-surface-1: #e2eaf6;
+  --bg-surface-2: #e4e6f5;
+  --bg-surface-2b: #dbeaf0;
+  --bg-surface-3: #d6dcef;
+  --bg-surface-4: #c8d3ea;
+  --bg-surface-5: #a9b8de;
+  --bg-surface-6: #92a8d1;
+  --bg-surface-7: #7690c2;
+  --bg-surface-8: #4f6aa8;
+  --bg-surface-mid: #6280b5;
   --bg-input: #ffffff;
   --bg-avatar: rgb(196, 196, 201);
   --bg-danger-surface: #fbe3e3;
@@ -60,7 +60,7 @@
   --text-muted: #767676;
 
   --border-color: #d7dbe3;
-  --border-color-mid: #d6d6d8;
+  --border-color-mid: #b7c3e0;
   --border-color-soft: rgba(54, 65, 83, 0.15);
 
   color-scheme: light;

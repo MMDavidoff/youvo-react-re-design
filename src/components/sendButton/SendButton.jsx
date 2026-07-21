@@ -4,7 +4,7 @@ import classes from './SendButton.module.css';
 const SendButton = () => {
   return (
 
-      <button className={classes.sendButton}><img src="image/telegramsendmessage.png" alt="" width={80} height={80} /></button>
+      <button className={classes.sendButton}><img src="image/send.svg" alt="Send" width={26} height={26} /></button>
   );
 }
 

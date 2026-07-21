@@ -8,22 +8,33 @@ const ChatContainer = () => {
     <div className={classes.chatContainer}>
       <ChatSearchBar />
       <ChatItem
-        unreadCount="15"
-        messageTime="11:39 AM"
-        itemTitle="Football club"
-        itemMessage="Hello, how are you?"
+        unreadCount="3"
+        messageTime="2:30 PM"
+        itemTitle="Photography Club"
+        itemMessage="Don't forget the workshop tomorrow"
+        isActive={true}
       />
       <ChatItem
-        unreadCount="9"
+        messageTime="1:45 PM"
+        itemTitle="Sarah Johnson"
+        itemMessage="See you at the event!"
+      />
+      <ChatItem
+        unreadCount="1"
+        messageTime="12:20 PM"
+        itemTitle="Coding Society"
+        itemMessage="Registration link is in the description"
+      />
+      <ChatItem
         messageTime="Yesterday"
-        itemTitle="Team meeting"
-        itemMessage="Don't forget about the meeting tomorrow.Don't forget about the meeting tomorrow."
+        itemTitle="Mike Chen"
+        itemMessage="Thanks for the help!"
       />
       <ChatItem
-        unreadCount="2"
-        messageTime="Thursday"
-        itemTitle="Project discussion"
-        itemMessage="Let's discuss the project timeline."
+        unreadCount="5"
+        messageTime="Yesterday"
+        itemTitle="Chess Club"
+        itemMessage="Tournament brackets are up"
       />
       <div className={classes.profileSettings}>
         <ChatItem

@@ -4,9 +4,9 @@ import RegTopBar from "../components/regTopBar/RegTopBar";
 import ActionLeftBar from "../components/actionLeftBar/ActionLeftBar";
 import ChatContainer from "../components/chatContainer/ChatContainer";
 import classes from "./NewChatPage.module.css";
-import ChatItem from "../components/chatItem/ChatItem";
 import ChatWindowHeader from "../components/chatWindowHeader/ChatWindowHeader";
-import BubbleRight from "../components/bubbleRight/BubbleRight";
+import ChatWindow from "../components/chatWindow/ChatWindow";
+import FooterChat from "../components/footerChat/FooterChat";
 
 const NewChatPage = () => {
   return (
@@ -15,8 +15,11 @@ const NewChatPage = () => {
       <div className={classes.flexContainer}>
         <ActionLeftBar />
         <ChatContainer />
-        <ChatWindowHeader />
-        <BubbleRight />
+        <div className={classes.chatMainArea}>
+          <ChatWindowHeader />
+          <ChatWindow />
+          <FooterChat />
+        </div>
       </div>
     </div>
   );

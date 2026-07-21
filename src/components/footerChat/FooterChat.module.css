@@ -1,7 +1,9 @@
 .footerChat {
   display: flex;
+  align-items: center;
+  gap: 15px;
   margin-top: auto;
-  
+
 }
 
 @media (max-width: 450px) {

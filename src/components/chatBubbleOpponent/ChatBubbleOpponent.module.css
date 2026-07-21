@@ -3,23 +3,33 @@
   align-items: center;
 }
 .ChatBubbleOpponent {
-  background-color: #696969;
-  border: var(--border-color-mid) 1px solid;
-  border-radius: 20px;
- 
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-color);
+  border-radius: 22px;
+
   box-sizing: border-box;
-  padding: 10px;
+  padding: 14px 20px;
   width: fit-content;
   margin-left: 20px;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: var(--text-primary);
   text-align: end;
 }
 
+.bubbleText {
+  font-size: 18px;
+}
+
+.bubbleTime {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
 .userLogoOpponent {
-  width: 45px;
-  height: 45px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  background-color: #c25555;
+  background-color: #008b7f;
   margin-left: 8px;
 }

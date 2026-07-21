@@ -1,15 +1,18 @@
 .textEnter {
   background-color: var(--bg-surface-5);
   border: var(--border-color-mid) 1px solid;
-  border-radius: 20px;
+  border-radius: 22px;
   color: var(--text-primary);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
- 
   box-sizing: border-box;
-  padding: 15px 5px;
-  height: 66px;
+  padding: 15px 20px;
+  height: 78px;
   width: 100%;
-  margin-left: 20px;
-  
+
+}
+
+.textEnter::placeholder {
+  color: white;
+  font-weight: 400;
 }
