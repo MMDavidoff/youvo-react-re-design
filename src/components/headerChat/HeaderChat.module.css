@@ -18,16 +18,18 @@
   text-align: center;
 }
 
+/* Presence dot: the adjacent text label carries the same meaning,
+   so the colour is reinforcement rather than the only signal. */
 .circle {
   width: 15px;
   height: 15px;
-  background-color: #41809a;
+  background-color: var(--success);
   border-radius: 50%;
   margin-left: 8px;
 }
 
 .status {
-  color: #41809a;
+  color: var(--text-secondary);
   font-size: 18px;
   margin-left: 5px;
 }

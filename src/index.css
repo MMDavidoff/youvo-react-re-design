@@ -1,81 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 
+/* ==========================================================================
+   Youvo — design tokens
+   One brand hue (teal) carried through both themes; neutrals are a cool
+   teal-tinted slate so dark and light read as the same product.
+   Every fill/text pair below is checked against WCAG AA (4.5:1 body text).
+   ========================================================================== */
+
 :root {
-  --bg-page: #0f0f0f;
-  --bg-app: #0a0a0a;
-  --bg-app-strong: #000000;
-  --bg-surface-1: #141414;
-  --bg-surface-2: #111111;
-  --bg-surface-2b: #1e1e1e;
-  --bg-surface-3: #474747;
-  --bg-surface-4: #252525;
-  --bg-surface-5: #282828;
-  --bg-surface-6: #333333;
-  --bg-surface-7: #3b3b3b;
-  --bg-surface-8: #4d4d4d;
-  --bg-surface-mid: #404040;
-  --bg-input: #101010;
-  --bg-avatar: rgb(129, 129, 129);
-  --bg-danger-surface: #331414;
-  --bg-elevated-hover: rgb(28, 28, 37);
-  --bg-overlay: rgba(255, 255, 255, 0.15);
-  --bg-overlay-soft: rgba(255, 255, 255, 0.1);
+  /* ---- surfaces: canvas -> raised, monotonic ladder ---- */
+  --bg-app-strong: #070c0e;
+  --bg-page: #0a1114;
+  --bg-app: #0a1114;
+  --bg-surface-1: #0e171b;
+  --bg-surface-2: #132026;
+  --bg-surface-2b: #182830;
+  --bg-surface-3: #1f313a;
+  --bg-surface-4: #0e181d;
+  --bg-surface-5: #17242a;
+  --bg-surface-6: #1e2f37;
+  --bg-surface-mid: #263b45;
+  --bg-surface-7: #2e4753;
+  --bg-surface-8: #375563;
+  --bg-input: #0c1518;
+  --bg-icon-button: #0b1417;
+  --bg-avatar: #33505c;
+  --bg-elevated-hover: #1b2a31;
+  --bg-overlay: rgba(255, 255, 255, 0.07);
+  --bg-overlay-soft: rgba(255, 255, 255, 0.04);
 
-  --text-primary: #ffffff;
-  --text-secondary: #99a1af;
-  --text-tertiary: #ffffffa7;
-  --text-muted: #888888;
+  /* ---- brand: deep teal fills, bright teal for text & edges ---- */
+  --accent: #00766c;
+  --accent-hover: #008176;
+  --accent-pressed: #005d55;
+  --accent-contrast: #ffffff;
+  --accent-text: #34d3bf;
+  --accent-border: #2bbdab;
+  --accent-soft: rgba(45, 200, 180, 0.14);
+  --accent-soft-strong: rgba(45, 200, 180, 0.22);
+  --avatar-accent: #0b7268;
 
-  --border-color: #364153;
-  --border-color-mid: #5d5d5d;
-  --border-color-soft: rgba(54, 65, 83, 0.4);
+  /* ---- status ---- */
+  --danger: #c93a41;
+  --danger-hover: #d5454c;
+  --danger-contrast: #ffffff;
+  --danger-text: #ff8f93;
+  --bg-danger-surface: #33161a;
+  --success: #2fa46b;
+  --warning: #d9922f;
+
+  /* ---- text ---- */
+  --text-primary: #eef4f6;
+  --text-secondary: #9aabb3;
+  --text-tertiary: rgba(238, 244, 246, 0.72);
+  --text-muted: #7b9099;
+
+  /* ---- lines ---- */
+  --border-color: #24343b;
+  --border-color-mid: #35505c;
+  --border-color-soft: rgba(140, 175, 190, 0.14);
+
+  /* ---- chat bubbles ---- */
+  --bubble-own: #0c6f66;
+  --bubble-own-text: #eaf7f5;
+  --bubble-own-meta: rgba(234, 247, 245, 0.72);
+
+  /* ---- elevation & focus ---- */
+  --focus-ring: rgba(45, 200, 180, 0.35);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 18px 40px -14px rgba(0, 0, 0, 0.7);
 
   color-scheme: dark;
 }
 
 :root[data-theme='light'] {
-  --bg-page: #eef2f8;
-  --bg-app: #f8fafc;
+  /* ---- surfaces: white cards floating on a cool paper canvas ---- */
   --bg-app-strong: #ffffff;
-  --bg-surface-1: #e2eaf6;
-  --bg-surface-2: #e4e6f5;
-  --bg-surface-2b: #dbeaf0;
-  --bg-surface-3: #d6dcef;
-  --bg-surface-4: #c8d3ea;
-  --bg-surface-5: #a9b8de;
-  --bg-surface-6: #92a8d1;
-  --bg-surface-7: #7690c2;
-  --bg-surface-8: #4f6aa8;
-  --bg-surface-mid: #6280b5;
+  --bg-page: #eceff1;
+  --bg-app: #f4f7f8;
+  --bg-surface-1: #eaeff1;
+  --bg-surface-2: #ffffff;
+  --bg-surface-2b: #edf2f3;
+  --bg-surface-3: #e3eaec;
+  --bg-surface-4: #f2f6f8;
+  --bg-surface-5: #ffffff;
+  --bg-surface-6: #dfe8ea;
+  --bg-surface-mid: #cfdce0;
+  --bg-surface-7: #bdcdd3;
+  --bg-surface-8: #a7bcc4;
   --bg-input: #ffffff;
-  --bg-avatar: rgb(196, 196, 201);
-  --bg-danger-surface: #fbe3e3;
-  --bg-elevated-hover: rgb(232, 232, 238);
-  --bg-overlay: rgba(0, 0, 0, 0.06);
-  --bg-overlay-soft: rgba(0, 0, 0, 0.05);
+  --bg-icon-button: #ffffff;
+  --bg-avatar: #b6c7cd;
+  --bg-elevated-hover: #e7eef0;
+  --bg-overlay: rgba(13, 38, 46, 0.05);
+  --bg-overlay-soft: rgba(13, 38, 46, 0.035);
 
-  --text-primary: #14181f;
-  --text-secondary: #55606f;
-  --text-tertiary: #14181fa7;
-  --text-muted: #767676;
+  /* ---- brand: same teal, tuned for a light ground ---- */
+  --accent: #00786e;
+  --accent-hover: #00655d;
+  --accent-pressed: #00544d;
+  --accent-contrast: #ffffff;
+  --accent-text: #006d66;
+  --accent-border: #009286;
+  --accent-soft: rgba(0, 120, 110, 0.10);
+  --accent-soft-strong: rgba(0, 120, 110, 0.16);
+  --avatar-accent: #0b7268;
 
-  --border-color: #d7dbe3;
-  --border-color-mid: #b7c3e0;
-  --border-color-soft: rgba(54, 65, 83, 0.15);
+  /* ---- status ---- */
+  --danger: #c02932;
+  --danger-hover: #a41f27;
+  --danger-contrast: #ffffff;
+  --danger-text: #b3242c;
+  --bg-danger-surface: #fdecec;
+  --success: #17794c;
+  --warning: #a16207;
+
+  /* ---- text ---- */
+  --text-primary: #0e1b20;
+  --text-secondary: #4b5f68;
+  --text-tertiary: rgba(14, 27, 32, 0.72);
+  --text-muted: #62757e;
+
+  /* ---- lines ---- */
+  --border-color: #d8e0e3;
+  --border-color-mid: #8fa2a9;
+  --border-color-soft: rgba(14, 45, 55, 0.10);
+
+  /* ---- chat bubbles ---- */
+  --bubble-own: #0f7d72;
+  --bubble-own-text: #ffffff;
+  --bubble-own-meta: rgba(255, 255, 255, 0.82);
+
+  /* ---- elevation & focus ---- */
+  --focus-ring: rgba(0, 120, 110, 0.28);
+  --shadow-sm: 0 1px 3px rgba(15, 40, 48, 0.10);
+  --shadow-card: 0 18px 40px -18px rgba(15, 40, 48, 0.28);
 
   color-scheme: light;
 }
 
-img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']) {
+/* Icons ship as white SVGs. In light mode they are inverted to dark so they
+   read on pale surfaces. Icons that sit on a filled brand/danger surface must
+   stay white — mark those with `data-on-fill` to opt out. */
+img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']):not([data-on-fill]) {
   transition: filter 0.3s ease;
 }
 
-[data-theme='light'] img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']) {
+[data-theme='light'] img[src$='.svg']:not([src*='logoYouvo']):not([src*='group-add']):not([src*='search']):not([data-on-fill]) {
   filter: invert(0.85);
 }
 
 * {
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Keyboard focus is visible everywhere; pointer clicks stay clean. */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-border);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 html, body, div, span, applet, object, iframe,

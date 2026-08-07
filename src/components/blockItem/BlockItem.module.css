@@ -9,26 +9,28 @@
 }
 
 .blockItem:hover {
-  border-color: #1aa3a3;
+  border-color: var(--accent-border);
+  background-color: var(--accent-soft);
 }
 .infoWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* Title carries the strongest text weight, supporting copy steps down. */
 .blockItem h3 {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 24px;
 }
 
 .blockItem p {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-size: 16px;
   margin: 10px 0;
 }
 
 .blockItem h4 {
-  color: #1aa3a3;
+  color: var(--accent-text);
   font-size: 18px;
   margin-top: 15px;
   text-align: end;

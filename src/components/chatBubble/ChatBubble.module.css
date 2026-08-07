@@ -4,7 +4,7 @@
   justify-content: end;
 }
 .chatBubble {
-  background-color: #3b82f6;
+  background-color: var(--bubble-own);
   border: none;
   border-radius: 22px;
 
@@ -13,7 +13,7 @@
   width: fit-content;
   margin-left: 20px;
   align-items: center;
-  color: #ffffff;
+  color: var(--bubble-own-text);
   text-align: end;
 }
 
@@ -23,7 +23,7 @@
 
 .bubbleTime {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--bubble-own-meta);
   margin-top: 6px;
 }
 

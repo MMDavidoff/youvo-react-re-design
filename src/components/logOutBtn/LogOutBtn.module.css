@@ -1,17 +1,16 @@
 .logOutBtn {
   background-color: var(--bg-danger-surface);
-  color: var(--text-primary);
-  border: none;
+  color: var(--danger-text);
+  border: 1px solid var(--danger);
   border-radius: 20px;
   padding: 10px 150px;
   font-size: 32px;
   cursor: pointer;
-  border: none;
   width: 100%;
   transition: 0.3s;
 }
 
 .logOutBtn:hover {
-  background-color: white;
-  color: #331414  ;
+  background-color: var(--danger);
+  color: var(--danger-contrast);
 }

@@ -1,5 +1,6 @@
 .mainButton  {
-  background-color: rgba(106, 255, 130, 0.30);
+  background-color: var(--accent-soft-strong);
+  border: 1px solid var(--border-color-soft);
   margin-bottom: 15px;
   border-radius: 20px;
   box-sizing: border-box;

@@ -8,22 +8,24 @@
   box-sizing: border-box;
   min-width: 210px;
   gap: 15px;
-  transition: 500ms;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
   cursor: pointer;
+  color: var(--text-primary);
 }
 
 .personChat:hover {
-  background-color: #f1f1f1;
-  scale: 1.1;
+  background-color: var(--bg-elevated-hover);
+  border-color: var(--accent-border);
+  transform: scale(1.02);
 }
 .dateChat {
   font-weight: bold;
-  text-shadow: rgb(54, 54, 54) 1px 1px 1px;
+  color: var(--text-secondary);
 }
 
 .opponentName {
   font-weight: bold;
-  text-shadow: rgb(54, 54, 54) 1px 1px 1px;
+  color: var(--text-primary);
   font-size: 25px;
   align-items: center;
   justify-content: flex-start;

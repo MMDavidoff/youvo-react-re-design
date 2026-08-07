@@ -6,13 +6,18 @@
   border-radius: 20px;
   border: var(--border-color) 1px solid;
   cursor: pointer;
-  transition: 500ms;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   padding: 10px;
   max-width: 90px;
   width: 100%;
-
 }
 
 .buttonAction:hover {
- border-color: #1aa3a3;
+  border-color: var(--accent-border);
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+.buttonAction:active {
+  background-color: var(--accent-soft-strong);
 }

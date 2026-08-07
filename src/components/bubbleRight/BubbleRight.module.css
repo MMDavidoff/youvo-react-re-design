@@ -1,10 +1,10 @@
 .bubbleRightWrapper {
-  background-color: #009689;
+  background-color: var(--bubble-own);
   border-radius: 45px 45px 15px 45px;
   height: 80px;
   width: 280px;
   padding: 20px;
-  color: white;
+  color: var(--bubble-own-text);
   font-size: 20px;
   font-weight: 200;
   text-align: end;

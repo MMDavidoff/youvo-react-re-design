@@ -11,10 +11,15 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  transition: 500ms;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .imageSend:hover {
-  border-color: #1aa3a3;
-  scale: 1.1;
+  border-color: var(--accent-border);
+  background-color: var(--accent-soft);
+  transform: scale(1.06);
+}
+
+.imageSend:active {
+  transform: scale(0.98);
 }
