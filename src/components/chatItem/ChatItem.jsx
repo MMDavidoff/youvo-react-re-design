@@ -5,7 +5,7 @@ const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting,
   return (
     <div className={`${classes.chatItem} ${isActive ? classes.active : ""}`}>
       <div className={classes.userPicture}>
-        <img src="image/user.svg" alt="userPicture" height="24" width="24" />
+        <img src="/image/user.svg" alt="userPicture" height="24" width="24" />
       </div>
       <div className={classes.itemInfo}>
         <div className={classes.itemMessageContainer}>
@@ -20,7 +20,7 @@ const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting,
       </div>
        {isSetting && (
           <div className={classes.settingIcon}>
-            <img src="image/settings.svg" alt="setting" height="25" width="25" />
+            <img src="/image/settings.svg" alt="setting" height="25" width="25" />
           </div>
         )}
     </div>
