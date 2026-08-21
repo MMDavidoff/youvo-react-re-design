@@ -5,7 +5,7 @@ const ChatItem = ({ unreadCount, messageTime, itemTitle, itemMessage, isSetting,
   return (
     <div className={`${classes.chatItem} ${isActive ? classes.active : ""}`}>
       <div className={classes.userPicture}>
-        <img src="/image/user.svg" alt="userPicture" height="24" width="24" />
+        <img src="/image/user.svg" alt="userPicture" height="24" width="24" data-on-fill />
       </div>
       <div className={classes.itemInfo}>
         <div className={classes.itemMessageContainer}>

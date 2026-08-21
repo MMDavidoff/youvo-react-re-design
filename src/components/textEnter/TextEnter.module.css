@@ -9,9 +9,16 @@
   padding: 15px 20px;
   height: 78px;
   width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .textEnter::placeholder {
-  color: white;
+  color: var(--text-muted);
   font-weight: 400;
+}
+
+.textEnter:focus {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--focus-ring);
 }

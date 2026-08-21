@@ -1,14 +1,14 @@
 .mainPageButton {
-  background-color: #009689;
-  color: white;
+  background-color: var(--accent);
+  color: var(--accent-contrast);
   padding: 14px 28px;
   border: none;
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
   font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(26, 163, 163, 0.6);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-sm);
   align-items: center;
   display: flex;
   gap: 10px;
@@ -17,16 +17,23 @@
 }
 
 .mainPageButton:hover {
-  background-color: rgba(0, 141, 129, 0.8);
+  background-color: var(--accent-hover);
 }
 
+.mainPageButton:active {
+  background-color: var(--accent-pressed);
+  transform: scale(0.98);
+}
 
 .redButton {
-box-shadow: 0 0 10px rgba(230, 5, 5, 0.6);
-background-color: #a61212;
-
+  background-color: var(--danger);
+  color: var(--danger-contrast);
 }
 
 .redButton:hover {
-  background-color: rgba(161, 18, 18, 0.8);
+  background-color: var(--danger-hover);
+}
+
+.redButton:active {
+  background-color: var(--danger-hover);
 }

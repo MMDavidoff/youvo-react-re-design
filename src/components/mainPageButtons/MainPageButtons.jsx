@@ -6,7 +6,7 @@ const MainPageButtons = ({ icon, buttonText, className }) => {
 
   return (
     <button className={`${classes.mainPageButton} ${extraClass}`}>
-      <img src={icon} alt={buttonText} width={20} height={20} />
+      <img src={icon} alt={buttonText} width={20} height={20} data-on-fill />
       {buttonText}
     </button>
   );

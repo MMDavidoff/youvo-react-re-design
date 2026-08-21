@@ -8,17 +8,17 @@ border: 1px solid var(--border-color);
 }
 
 .upcomingEventItem:hover {
-  border-color: #1aa3a3;
-  
+  border-color: var(--accent-border);
+  background-color: var(--accent-soft);
 }
 
 .title {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 24px;
 }
 
 .description {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-size: 16px;
   margin: 10px 0;
 }
@@ -31,13 +31,13 @@ border: 1px solid var(--border-color);
 }
 
 .date {
-  color: #1aa3a3;
+  color: var(--accent-text);
   font-size: 16px;
   text-align: end;
-}  
+}
 
 .time {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   font-size: 16px;
 }
 

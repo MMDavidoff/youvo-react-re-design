@@ -1,23 +1,25 @@
 .buttonMode {
   display: flex;
   align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: var(--bg-surface-1);
-    width: 68px;
-    height: 68px;
-    border-radius: 18px;
-     box-sizing: border-box;
-     transition: 0.6s ease;
-     background-color: #000000;
+  justify-content: center;
+  border: 1px solid transparent;
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  background-color: var(--bg-icon-button);
 }
 
 .buttonMode:hover {
-  background-color: #3b8c85;
+  background-color: var(--bg-elevated-hover);
+  border-color: var(--border-color);
   cursor: pointer;
-
 }
 
-.active {
-  background-color: #3b8c85;
+/* Tinted rather than filled, so the theme-inverted icon keeps its contrast. */
+.active,
+.active:hover {
+  background-color: var(--accent-soft-strong);
+  border-color: var(--accent-border);
 }

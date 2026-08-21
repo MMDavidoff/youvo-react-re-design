@@ -1,14 +1,15 @@
 .date {
   text-align: center;
-  color: #00b8a9;
+  color: var(--accent-text);
   font-size: 30px;
   margin-top: 20px;
- 
 }
 
 .currentTime {
   text-align: center;
-  color: #00b8a9;
+  color: var(--text-secondary);
   font-size: 18px;
   margin-top: 10px;
+  /* Fixed-width digits so the ticking clock doesn't jitter. */
+  font-variant-numeric: tabular-nums;
 }

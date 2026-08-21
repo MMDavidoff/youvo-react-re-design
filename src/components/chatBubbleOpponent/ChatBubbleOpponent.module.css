@@ -30,6 +30,6 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background-color: #008b7f;
+  background-color: var(--avatar-accent);
   margin-left: 8px;
 }

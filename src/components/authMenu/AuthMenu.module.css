@@ -15,31 +15,34 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--shadow-card);
 }
 
 .form input {
   padding: 18px 20px;
   border-radius: 20px;
   background-color: var(--bg-surface-4);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color-mid);
   width: 350px;
   box-sizing: border-box;
   color: var(--text-primary);
   font-size: 16px;
   cursor: text;
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
 }
 
 .form input::placeholder {
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
-.form input:hover,
+.form input:hover {
+  border-color: var(--accent-border);
+}
+
 .form input:focus {
-  background-color: var(--bg-overlay-soft);
-  border-color: #64e1d7;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 .header {
@@ -51,19 +54,23 @@
 }
 
 .signUpButton {
-  background-color: #009689;
-  color: white;
+  background-color: var(--accent);
+  color: var(--accent-contrast);
   padding: 14px 28px;
   border: none;
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
   font-weight: 500;
-  transition: all 0.3s ease;
-   box-shadow: 0 0 10px rgba(26, 163, 163, 0.6);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-sm);
 }
 
 .signUpButton:hover {
-  background: #00786e  
+  background-color: var(--accent-hover);
+}
+
+.signUpButton:active {
+  background-color: var(--accent-pressed);
 }
 

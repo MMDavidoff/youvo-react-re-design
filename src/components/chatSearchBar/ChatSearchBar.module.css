@@ -9,24 +9,35 @@
   padding: 14px;
   box-sizing: border-box;
   background-color: var(--bg-surface-1);
+  color: var(--text-primary);
   border-radius: 16px;
   width: 100%;
   gap: 10px;
-  border: none;
+  /* Transparent, not none — keeps :focus from shifting the layout by 1px. */
+  border: 1px solid transparent;
   font-size: 16px;
   padding-left: 42px;
+  outline: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
 
+.chatSearchBar::placeholder {
+  color: var(--text-muted);
 }
 
 .searchIcon {
   position: absolute;
   top: 16px;
   left: 14px;
+}
 
+.chatSearchBar:hover {
+  border-color: var(--border-color);
 }
 
 .chatSearchBar:focus {
-  border: 1px solid var(--text-secondary);
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 .placeholder {
