@@ -11,8 +11,8 @@ const TopBarAction = () => {
 
   return (
     <div className={classes.topBarAction}>
-      <ButtonAction onClick={() => navigate(ROUTES.MAIN)} buttonName="Clubs" />
-      <ButtonAction onClick={() => navigate(ROUTES.CHAT)} buttonName="Chat" />
+      <ButtonAction onClick={() => navigate(`/${ROUTES.MAIN}`)} buttonName="Clubs" />
+      <ButtonAction onClick={() => navigate(`/${ROUTES.NEWCHAT}`)} buttonName="Chat" />
       <button className={classes.themeToggle} onClick={toggleTheme}>
         <img
           src={theme === "light" ? "/image/sun.svg" : "/image/moon.svg"}
